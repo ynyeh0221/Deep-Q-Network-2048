@@ -495,7 +495,6 @@ class DQNAgent:
         self.target_update_freq = 2000
         self.steps = 0
 
-        # Use Apple's Metal Performance Shaders (MPS) if available
         if torch.backends.mps.is_available():
             self.device = torch.device("mps")
             print("Using Apple MPS (Metal Performance Shaders)")
