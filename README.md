@@ -63,4 +63,12 @@ evaluate_agent(agent, games=5, render=True)
 
 ## Architecture
 ### Game Environment
-
+The Game2048 class implements the complete 2048 game logic with:
+* Grid manipulation and tile merging
+* Random tile generation
+* Valid move detection
+* Sophisticated reward calculation based on:
+    * Tile merges and values
+    * Board openness
+    * Snake pattern adherence
+    * Board smoothness
