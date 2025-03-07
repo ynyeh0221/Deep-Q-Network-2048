@@ -53,8 +53,10 @@ trained_agent = train_agent(
 ### Evaluation
 To evaluate a trained agent:
 ```
+# Load a previously trained model
 agent = DQNAgent(state_shape=(16, 4, 4), action_size=4)
 agent.load("2048_best_model.pt")
 
+# Run evaluation with visualization
 evaluate_agent(agent, games=5, render=True)
 ```
