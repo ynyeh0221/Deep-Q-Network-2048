@@ -60,3 +60,7 @@ agent.load("2048_best_model.pt")
 # Run evaluation with visualization
 evaluate_agent(agent, games=5, render=True)
 ```
+
+## Architecture
+### Game Environment
+
