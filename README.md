@@ -12,11 +12,16 @@ This project implements a reinforcement learning AI that learns to play the clas
 ## Installation
 ### Requirements
 This project requires the following dependencies:
+
 `torch       # Neural network framework`
+
 `numpy       # Array operations and game logic`
+
 `matplotlib  # Training visualization`
+
 `pygame      # Game visualization`
 
 ### Setup
 Install all required dependencies with:
+
 `pip install torch numpy matplotlib pygame`
