@@ -772,13 +772,12 @@ def evaluate_agent(agent, games=5, render=True):
 
     return np.mean(scores), np.mean(highest_tiles)
 
-# Main execution
+# Main execution function
 if __name__ == "__main__":
     # Set longer training with less frequent visualization
     print("Starting training...")
     trained_agent = train_agent(episodes=50000, visualize_every=1000, update_target_every=100)
 
-    # Save the final model
     trained_agent.save("2048_final_model.pt")
 
     # Make sure pygame is closed before evaluation
