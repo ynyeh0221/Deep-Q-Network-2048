@@ -8,3 +8,15 @@ This project implements a reinforcement learning AI that learns to play the clas
 * Support for the "snake pattern" strategy (a proven effective approach for 2048)
 * Training progress visualization and model checkpointing
 * Evaluation mode to showcase the trained agent's performance
+
+## Installation
+### Requirements
+This project requires the following dependencies:
+torch       # Neural network framework
+numpy       # Array operations and game logic
+matplotlib  # Training visualization
+pygame      # Game visualization
+
+### Setup
+Install all required dependencies with:
+pip install torch numpy matplotlib pygame
