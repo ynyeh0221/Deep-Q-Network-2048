@@ -79,3 +79,11 @@ The DQN uses a convolutional neural network architecture:
 * Batch normalization for training stability
 * Dropout for regularization
 * Multiple fully connected layers
+
+### Agent Implementation
+The DQNAgent uses modern reinforcement learning techniques:
+* Experience replay with large memory buffer
+* Double DQN for more stable Q-value estimation
+* Epsilon-greedy exploration with decay
+* Learning rate scheduling
+* Huber loss for robustness to outliers
