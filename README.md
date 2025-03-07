@@ -12,16 +12,49 @@ This project implements a reinforcement learning AI that learns to play the clas
 ## Installation
 ### Requirements
 This project requires the following dependencies:
-
-`torch       # Neural network framework`
-
-`numpy       # Array operations and game logic`
-
-`matplotlib  # Training visualization`
-
-`pygame      # Game visualization`
+```
+torch       # Neural network framework
+numpy       # Array operations and game logic
+matplotlib  # Training visualization
+pygame      # Game visualization
+```
 
 ### Setup
 Install all required dependencies with:
 
-`pip install torch numpy matplotlib pygame`
+```
+pip install torch numpy matplotlib pygame
+```
+
+## Usage
+### Training
+```
+python 2048_ai.py
+```
+
+This will:
+0. Initialize the 2048 game environment
+0. Create and train a DQN agent for 50,000 episodes
+0. Save checkpoints regularly during training
+0. Save the final model as "2048_final_model.pt"
+0. Generate a training visualization plot
+0. Run an evaluation of the trained agent
+
+### Customizing Training
+You can modify the training parameters in the main execution block:
+
+```
+trained_agent = train_agent(
+    episodes=50000,           # Total training episodes
+    visualize_every=1000,     # Visualize gameplay every N episodes
+    update_target_every=100   # Update target network frequency
+)
+```
+### Evaluation
+To evaluate a trained agent:
+```
+agent = DQNAgent(state_shape=(16, 4, 4), action_size=4)
+agent.load("2048_best_model.pt")
+
+evaluate_agent(agent, games=5, render=True)
+```
