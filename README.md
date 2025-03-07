@@ -72,3 +72,10 @@ The Game2048 class implements the complete 2048 game logic with:
     * Board openness
     * Snake pattern adherence
     * Board smoothness
+ 
+### Neural Network
+The DQN uses a convolutional neural network architecture:
+* Convolutional layers to process the 4x4 game grid
+* Batch normalization for training stability
+* Dropout for regularization
+* Multiple fully connected layers
